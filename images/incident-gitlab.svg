@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1050" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">GitLab｜人に引き継いでも、状態を誤認すれば事故が広がる</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">2016年7月12日：自動切替後の人手復旧で起きたスプリットブレイン</text>
+<rect x="52" y="150" width="392" height="160" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">通信断で自動切替</text>
+<text x="76" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">切替の通知が不足</text>
+<text x="76" y="274.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">復旧手順にも問題</text>
+<rect x="504" y="150" width="392" height="160" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="528" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">HA制御を手動停止</text>
+<text x="528" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">DBプロセスは動作したまま</text>
+<rect x="956" y="150" width="392" height="160" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="980" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">両DBへ接続が残る</text>
+<text x="980" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">クライアントが分散した状態</text>
+<path d="M444 230H504" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<path d="M896 230H956" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="52" y="390" width="616" height="160" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="433.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">DB4</text>
+<text x="76" y="480.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">クライアント接続・処理が残る</text>
+<rect x="732" y="390" width="616" height="160" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="756" y="433.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">DB5</text>
+<text x="756" y="480.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">クライアント接続・処理が残る</text>
+<text x="700" y="600.0" font-size="28" font-weight="600" fill="#243447" text-anchor="middle">約30分、両DBがプライマリとして稼働</text>
+<path d="M360 550V655H700V690" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<path d="M1040 550V655H700V690" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<rect x="200" y="690" width="1000" height="145" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="224" y="733.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">DB5そのものを停止し、DB4に集約</text>
+<text x="224" y="780.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">最終的に破棄したDB5への書き込みが失われた</text>
+<rect x="52" y="875" width="1296" height="88" rx="10" fill="#f4f0fa" stroke="none" stroke-width="2"/>
+<text x="700" y="928.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">教訓：手動対応にも、正確な状態把握・検証済み手順・訓練が必要</text>
+<text x="52" y="1025.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">出典：GitLab公式障害報告 [11]。HA制御の停止と、DBの停止は異なる操作。</text></g></svg>

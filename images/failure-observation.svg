@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="980" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">タイムアウトは、停止を証明しない</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">同じ「応答なし」でも、必要な対処は異なる</text>
+<rect x="52" y="150" width="312" height="150" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">プロセス停止</text>
+<text x="76" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">実際に相手が停止</text>
+<path d="M208 300V342H700V380" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="380" y="150" width="312" height="150" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="404" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">ネットワーク分断</text>
+<text x="404" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">相手は動作している</text>
+<path d="M536 300V342H700V380" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="708" y="150" width="312" height="150" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="732" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">遅延・実行停止</text>
+<text x="732" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">期限内に処理できない</text>
+<path d="M864 300V342H700V380" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="1036" y="150" width="312" height="150" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1060" y="193.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">応答だけ消失</text>
+<text x="1060" y="240.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">書き込みは完了した可能</text>
+<text x="1060" y="274.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">性</text>
+<path d="M1192 300V342H700V380" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="420" y="380" width="560" height="125" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="444" y="423.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">観測できる事実：期限内に応答がない</text>
+<text x="444" y="470.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">相手の停止・書き込み結果は未確定</text>
+<text x="52" y="567.0" font-size="26" font-weight="600" fill="#243447" text-anchor="start">検知器の判断と、利用者の処理結果</text>
+<rect x="52" y="605" width="632" height="130" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="648.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">真陰性</text>
+<text x="76" y="695.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">利用者：成功　／　検知：正常</text>
+<rect x="716" y="605" width="632" height="130" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="740" y="648.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">偽陽性</text>
+<text x="740" y="695.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">利用者：成功　／　検知：障害</text>
+<rect x="52" y="760" width="632" height="130" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="803.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">偽陰性・グレー障害</text>
+<text x="76" y="850.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">利用者：失敗　／　検知：正常</text>
+<rect x="716" y="760" width="632" height="130" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="740" y="803.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">真陽性</text>
+<text x="740" y="850.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">利用者：失敗　／　検知：障害</text>
+<text x="52" y="955.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">検知の「陽性」は障害ありの判断を指す。出典：失敗検知器の研究 [1]、Gray Failure [3]。</text></g></svg>

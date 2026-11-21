@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1230" viewBox="0 0 1400 1230"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1230" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">手動デタッチ：新しいライターができても、旧ライターは止まらない</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">危険な状態の概念例。AWSの推奨手順ではない</text>
+<rect x="38" y="150" width="224" height="80" rx="10" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+<text x="150" y="197.0" font-size="23" font-weight="600" fill="#243447" text-anchor="middle">旧接続のアプリ</text>
+<path d="M150 230L150 1080" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="308" y="150" width="224" height="80" rx="10" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+<text x="420" y="197.0" font-size="23" font-weight="600" fill="#243447" text-anchor="middle">旧プライマリA</text>
+<path d="M420 230L420 1080" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="588" y="150" width="224" height="80" rx="10" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+<text x="700" y="197.0" font-size="23" font-weight="600" fill="#243447" text-anchor="middle">復旧処理</text>
+<path d="M700 230L700 1080" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="868" y="150" width="224" height="80" rx="10" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+<text x="980" y="197.0" font-size="23" font-weight="600" fill="#243447" text-anchor="middle">セカンダリB</text>
+<path d="M980 230L980 1080" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="1138" y="150" width="224" height="80" rx="10" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1250" y="197.0" font-size="23" font-weight="600" fill="#243447" text-anchor="middle">切替後のアプリ</text>
+<path d="M1250 230L1250 1080" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="296" y="258" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="284.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">1. ヘルスチェック：期限内に応答なし</text>
+<path d="M700 312H420" fill="none" stroke="#b85b16" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#risk)"/>
+<rect x="296" y="363" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="389.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">2. Bをデタッチし、独立した書き込み可能クラスタへ</text>
+<path d="M700 417H980" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="296" y="468" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="494.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">3. 新しい接続先を通知</text>
+<path d="M700 522H1250" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="296" y="573" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="599.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">4. 古い接続で書き込みα</text>
+<path d="M150 627H420" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="296" y="678" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="704.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">5. Aは成功を返す</text>
+<path d="M420 732H150" fill="none" stroke="#b85b16" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#risk)"/>
+<rect x="296" y="783" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="809.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">6. 新しい接続で書き込みβ</text>
+<path d="M1250 837H980" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<rect x="296" y="888" width="808" height="40" rx="0" fill="white" stroke="none" stroke-width="2"/>
+<text x="700" y="914.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">7. Bも成功を返す</text>
+<path d="M980 942H1250" fill="none" stroke="#b85b16" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#risk)"/>
+<rect x="52" y="1090" width="1296" height="88" rx="10" fill="#fff4e8" stroke="none" stroke-width="2"/>
+<text x="700" y="1143.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">Aにはα、Bにはβ。デタッチ後は自動で同じ履歴に戻らない</text>
+<text x="52" y="1205.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">α・βは説明用。概念的な処理順序。出典：Auroraのデタッチ・手動フェイルオーバー [4][5]。</text></g></svg>
