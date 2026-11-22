@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1210" viewBox="0 0 1400 1210"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1210" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">分断中：欠けた確定済み更新を、監視から生成できない</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">別の復旧可能なコピーがなく、更新Wが旧Primaryだけに残った説明用の状況</text>
+<rect x="58" y="150" width="344" height="80" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="230" y="198.0" font-size="25" font-weight="600" fill="#243447" text-anchor="middle">利用者</text>
+<path d="M230 230L230 635" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="528" y="150" width="344" height="80" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="700" y="198.0" font-size="25" font-weight="600" fill="#243447" text-anchor="middle">旧Primary A</text>
+<path d="M700 230L700 635" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<rect x="998" y="150" width="344" height="80" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1170" y="198.0" font-size="25" font-weight="600" fill="#243447" text-anchor="middle">Secondary B</text>
+<path d="M1170 230L1170 635" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="465" y="280.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">1. 更新W</text>
+<path d="M230 302H700" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<text x="465" y="363.0" font-size="23" font-weight="400" fill="#243447" text-anchor="middle">2. Aで確定し、成功応答</text>
+<path d="M700 385H230" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<text x="935" y="445.0" font-size="23" font-weight="400" fill="#b85b16" text-anchor="middle">3. Wは未到達のまま通信分断</text>
+<path d="M700 468H1170" fill="none" stroke="#b85b16" stroke-width="3" stroke-dasharray="9 7" marker-end="url(#risk)"/>
+<path d="M925 446L953 490" fill="none" stroke="#b85b16" stroke-width="2"/>
+<path d="M953 446L925 490" fill="none" stroke="#b85b16" stroke-width="2"/>
+<text x="935" y="554.0" font-size="23" font-weight="400" fill="#b85b16" text-anchor="middle">4. BはWを持たず、Aも確認できない</text>
+<rect x="52" y="670" width="616" height="240" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="713.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">履歴・権限を確認できるまで待つ</text>
+<text x="76" y="760.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">データ保全・強整合性を優先</text>
+<text x="76" y="794.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="76" y="828.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">分断が続くと、新側の再開時間に</text>
+<text x="76" y="862.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">上限を保証できない</text>
+<rect x="732" y="670" width="616" height="240" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="756" y="713.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">確認できなくてもBで再開する</text>
+<text x="756" y="760.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">停止時間の短縮を優先</text>
+<text x="756" y="794.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="756" y="828.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">Wを新側で引き継ぐ保証がなく、</text>
+<text x="756" y="862.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">旧側が書ければ分岐の危険も残る</text>
+<rect x="52" y="955" width="1296" height="86" rx="10" fill="#fff4e8" stroke="none" stroke-width="2"/>
+<text x="700" y="1008.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">旧側への新規書き込みを止めても、未到達のWが届くわけではない</text>
+<text x="700" y="1110.0" font-size="22" font-weight="400" fill="#243447" text-anchor="middle">CAPは強整合性と分断下の要求完了に関する制約。RPOとは区別して関連付ける。</text>
+<text x="52" y="1185.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">Wは説明用。CAP原論文 [27] と非同期複製の仕様 [5] に基づく分析。</text></g></svg>

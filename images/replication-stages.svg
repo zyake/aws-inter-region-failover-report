@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1060" viewBox="0 0 1400 1060"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1060" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">RPOゼロでも、直ちに最新の値を読めるとは限らない</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">保存された履歴と、読み取りへの可視化を分けて確認する概念図</text>
+<rect x="52" y="160" width="312" height="320" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">1. 受信</text>
+<text x="76" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">変更情報が届いた</text>
+<text x="76" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="76" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">まだ揮発メモリだけの</text>
+<text x="76" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">場合も考慮する</text>
+<path d="M364 300H380" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="380" y="160" width="312" height="320" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="404" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">2. 永続化</text>
+<text x="404" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">復旧に必要な履歴を保存</text>
+<text x="404" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="404" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">COMMITと必要なログが</text>
+<text x="404" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">残っているか</text>
+<path d="M692 300H708" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="708" y="160" width="312" height="320" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="732" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">3. 適用・復旧</text>
+<text x="732" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">履歴から状態を構成</text>
+<text x="732" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="732" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">更新の順序・完了範囲を</text>
+<text x="732" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">確認する</text>
+<path d="M1020 300H1036" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="1036" y="160" width="312" height="320" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1060" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">4. 可視化</text>
+<text x="1060" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">求める更新を読める</text>
+<text x="1060" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="1060" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start">読み取りの時点と</text>
+<text x="1060" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">整合性要件を確認</text>
+<rect x="52" y="535" width="616" height="220" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="578.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">復旧可能性の確認</text>
+<text x="76" y="625.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">必要な確定済み履歴がすべて残る</text>
+<text x="76" y="659.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">→ データ損失ゼロで復旧できる条件</text>
+<text x="76" y="693.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="76" y="727.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">受信だけでは、保存済みの証拠にならない</text>
+<rect x="732" y="535" width="616" height="220" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="756" y="578.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">読み取りの確認</text>
+<text x="756" y="625.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">保存済みでも、適用・可視化待ちは残る</text>
+<text x="756" y="659.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">→ 待機時間や読み取り遅延になり得る</text>
+<text x="756" y="693.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="756" y="727.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">最新値を要求する読み取りは別途制御</text>
+<rect x="52" y="805" width="1296" height="86" rx="10" fill="#f4f0fa" stroke="none" stroke-width="2"/>
+<text x="700" y="858.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">ログの保存範囲と、SQLで見える更新範囲を同じ指標にしない</text>
+<text x="700" y="958.0" font-size="25" font-weight="600" fill="#243447" text-anchor="middle">Aurora PostgreSQL：RPO遅延とvisibility遅延を別々に公開</text>
+<text x="52" y="1035.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">保証を整理する概念図。各エンジンの厳密な内部処理順序ではない。出典：[28][29][30]。</text></g></svg>

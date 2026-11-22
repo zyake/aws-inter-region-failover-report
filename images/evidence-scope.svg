@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1130" viewBox="0 0 1400 1130"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1130" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">導入の発表と、全障害条件での保証を分けて読む</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">住信SBIネット銀行：資料ごとの対象・記載・確認できない範囲</text>
+<rect x="52" y="160" width="416" height="440" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">同行プレスリリース</text>
+<text x="76" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">東京・大阪の冗長化</text>
+<text x="76" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">切替アクションの自動化</text>
+<text x="76" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="76" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">対象表現は</text>
+<text x="76" y="386.15999999999997" font-size="23" font-weight="400" fill="#243447" text-anchor="start">「バックアップデータ」の</text>
+<text x="76" y="420.2" font-size="23" font-weight="400" fill="#243447" text-anchor="start">RPOゼロ</text>
+<text x="76" y="567.0" font-size="20" font-weight="400" fill="#526479" text-anchor="start">2023年8月29日 [31]</text>
+<rect x="52" y="645" width="416" height="170" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="76" y="688.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">読み取れないこと</text>
+<text x="76" y="735.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">対象データ・障害条件の</text>
+<text x="76" y="769.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">詳細までは定義されない</text>
+<rect x="492" y="160" width="416" height="440" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="516" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">NRI導入インタビュー</text>
+<text x="516" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">不整合を許容しない方針</text>
+<text x="516" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">閉塞・書き込み停止</text>
+<text x="516" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="516" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">切替時RPOゼロと説明</text>
+<text x="516" y="386.15999999999997" font-size="23" font-weight="400" fill="#243447" text-anchor="start">RTOを3分から5分へ</text>
+<text x="516" y="420.2" font-size="23" font-weight="400" fill="#243447" text-anchor="start">記事時点で実障害発動なし</text>
+<text x="516" y="567.0" font-size="20" font-weight="400" fill="#526479" text-anchor="start">2024年2月1日 [32]</text>
+<rect x="492" y="645" width="416" height="170" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="516" y="688.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">読み取れないこと</text>
+<text x="516" y="735.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">公表目標と、すべての</text>
+<text x="516" y="769.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">分断での保証は別</text>
+<rect x="932" y="160" width="416" height="440" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="956" y="203.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">NRI実装記事</text>
+<text x="956" y="250.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">9監視すべてNGで起動</text>
+<text x="956" y="284.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">閉塞・NACL等で制御</text>
+<text x="956" y="318.08" font-size="23" font-weight="400" fill="#243447" text-anchor="start"></text>
+<text x="956" y="352.12" font-size="23" font-weight="400" fill="#243447" text-anchor="start">制御不能では時間超過後</text>
+<text x="956" y="386.15999999999997" font-size="23" font-weight="400" fill="#243447" text-anchor="start">スキップして先へ進む</text>
+<text x="956" y="420.2" font-size="23" font-weight="400" fill="#243447" text-anchor="start">手動経路・定期試験も用意</text>
+<text x="956" y="567.0" font-size="20" font-weight="400" fill="#526479" text-anchor="start">2024年9月10日、追記あり [33]</text>
+<rect x="932" y="645" width="416" height="170" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="956" y="688.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">読み取れないこと</text>
+<text x="956" y="735.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">スキップ時も含む保証と</text>
+<text x="956" y="769.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">業務承認の詳細は不明</text>
+<rect x="52" y="865" width="1296" height="92" rx="10" fill="#fff4e8" stroke="none" stroke-width="2"/>
+<text x="700" y="918.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">バックアップのRPOゼロ → 任意の分断でも全更新を保全、とは拡張できない</text>
+<text x="700" y="1037.0" font-size="25" font-weight="600" fill="#243447" text-anchor="middle">資料に書かれた主張、技術的な成立条件、非公開の業務判断を分ける</text>
+<text x="52" y="1105.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">本図は公表内容の読み分けであり、非公開の実装や安全性の成否を断定しない。[31][32][33]</text></g></svg>
