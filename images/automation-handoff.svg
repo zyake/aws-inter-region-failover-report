@@ -1,55 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1170" viewBox="0 0 1400 1170"><defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1430" viewBox="0 0 1400 1430"><defs>
 <marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
 <marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
 <marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
 <marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
-</defs><rect width="1400" height="1170" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
-<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">自動化と人への引継ぎを、一つの復旧経路にする</text>
-<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">単一ライターの整合性を重視した設計例。製品共通の停止ルールではない</text>
-<rect x="52" y="150" width="616" height="870" rx="10" fill="#f7faff" stroke="#d4dfed" stroke-width="2"/>
-<rect x="732" y="150" width="616" height="870" rx="10" fill="#faf7fd" stroke="#dfd6eb" stroke-width="2"/>
-<text x="360" y="192.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">自動化が担う範囲</text>
-<text x="1040" y="192.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">人・専門家へ引き継ぐ範囲</text>
+</defs><rect width="1400" height="1430" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">開始前の判断と、開始後の例外対応を分ける</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">人が開始を判断するAurora構成の設計例。番号は自社の運用手順を表す</text>
+<rect x="52" y="150" width="616" height="1140" rx="10" fill="#f7faff" stroke="#d4dfed" stroke-width="2"/>
+<rect x="732" y="150" width="616" height="1140" rx="10" fill="#faf7fd" stroke="#dfd6eb" stroke-width="2"/>
+<text x="360" y="198.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">自動化・実行手順</text>
+<text x="1040" y="198.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">人の判断・専門対応</text>
 <rect x="95" y="240" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
-<text x="119" y="283.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">適用条件を確認</text>
-<text x="119" y="330.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">観測・権限・データ・待機系</text>
-<path d="M360 365V420" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
-<rect x="95" y="420" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
-<text x="119" y="463.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">検証済みの復旧処理</text>
-<text x="119" y="510.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">操作結果と途中状態を記録</text>
-<path d="M360 545V600" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
-<rect x="95" y="600" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
-<text x="119" y="643.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">完了条件を確認</text>
-<text x="119" y="690.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">業務の成否と安全性を評価</text>
-<path d="M360 725V790" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
-<rect x="95" y="790" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
-<text x="119" y="833.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">回復を確認 → 継続監視</text>
-<text x="119" y="880.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">事後の照合・再構築・切戻し</text>
-<path d="M625 305H775" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
-<text x="700" y="277.0" font-size="20" font-weight="400" fill="#243447" text-anchor="middle">不明・矛盾</text>
-<path d="M625 483H700V305" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
-<rect x="641" y="422" width="118" height="38" rx="0" fill="white" stroke="none" stroke-width="2"/>
-<text x="700" y="450.0" font-size="20" font-weight="400" fill="#243447" text-anchor="middle">途中失敗</text>
-<path d="M625 663H700V483" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
-<rect x="651" y="605" width="98" height="38" rx="0" fill="white" stroke="none" stroke-width="2"/>
-<text x="700" y="631.0" font-size="20" font-weight="400" fill="#243447" text-anchor="middle">未回復</text>
-<rect x="775" y="240" width="530" height="125" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
-<text x="799" y="283.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">安全な境界で後続操作を保留</text>
-<text x="799" y="330.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">実行済み処理・観測結果を保全</text>
-<path d="M1040 365V420" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
-<rect x="775" y="420" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
-<text x="799" y="463.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">当番・責任者・専門家を招集</text>
-<text x="799" y="510.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">必要に応じて事業者へ連絡</text>
-<path d="M1040 545V600" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
-<rect x="775" y="600" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
-<text x="799" y="643.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">復旧方針を判断</text>
-<text x="799" y="690.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">整合性・停止時間・損失許容</text>
-<path d="M1040 725V790" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
-<rect x="775" y="790" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
-<text x="799" y="833.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">復旧処理の起動・専門対応</text>
-<text x="799" y="880.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">再開点と再実行可否を確認</text>
-<path d="M1040 915V970H76V662H95" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
-<text x="150" y="1004.0" font-size="21" font-weight="400" fill="#7252a3" text-anchor="start">復旧後は完了条件を再検証</text>
-<rect x="52" y="1035" width="1296" height="74" rx="10" fill="#f4f0fa" stroke="none" stroke-width="2"/>
-<text x="700" y="1088.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">判断を引き継いでも、実行は検証済みの自動処理を利用できる</text>
-<text x="52" y="1145.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">「保留」は自社の後続操作の制御。実行中の処理の強制終了や、事業者側の処理停止を意味しない。</text></g></svg>
+<text x="119" y="283.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">1. 観測と証拠収集</text>
+<text x="119" y="330.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">業務疎通・複製状況・鮮度</text>
+<rect x="775" y="240" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="799" y="283.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">2. 必要性と停止方針を判断</text>
+<text x="799" y="330.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">切替が解決策になるかを評価</text>
+<path d="M625 304H775" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<path d="M1040 365V395H360V430" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<rect x="95" y="430" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="119" y="473.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">3. 自社の書き込み経路を停止</text>
+<text x="119" y="520.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">Web・バッチ・キュー等の結果を確認</text>
+<rect x="775" y="430" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="799" y="473.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">4. 昇格の開始を承認</text>
+<text x="799" y="520.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">欠損・停止未確認・不明点を評価</text>
+<path d="M625 492H775" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<path d="M1040 555V590H360V650" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<rect x="52" y="605" width="1296" height="30" rx="0" fill="#fff4e8" stroke="none" stroke-width="2"/>
+<text x="700" y="627.0" font-size="20" font-weight="600" fill="#b85b16" text-anchor="middle">API呼出しの境界：開始後の通知は、呼出し前の承認・停止確認を代替しない</text>
+<rect x="95" y="650" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="119" y="693.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">5. Managed failoverを呼ぶ</text>
+<text x="119" y="740.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">イベント・役割・操作結果を記録</text>
+<rect x="775" y="650" width="530" height="125" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="799" y="693.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">不明・途中失敗を引き継ぐ</text>
+<text x="799" y="740.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">自社の後続操作を保留・証跡保全</text>
+<path d="M625 712H775" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<path d="M360 775V850" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<rect x="95" y="850" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="119" y="893.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">6. 接続移行・再開条件を確認</text>
+<text x="119" y="940.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">旧接続・データ・依存先・業務疎通</text>
+<rect x="775" y="850" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="799" y="893.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">進行状態とデータを調査</text>
+<text x="799" y="940.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">DB担当・責任者・事業者と復旧</text>
+<path d="M625 912H700V712H775" fill="none" stroke="#b85b16" stroke-width="3" marker-end="url(#risk)"/>
+<path d="M1040 775V850" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<path d="M360 975V1050" fill="none" stroke="#245f9c" stroke-width="3" marker-end="url(#normal)"/>
+<path d="M1040 975V1050" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<rect x="95" y="1050" width="530" height="125" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="119" y="1093.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">7. 条件を満たして業務再開</text>
+<text x="119" y="1140.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">継続監視と事後の照合へ</text>
+<rect x="775" y="1050" width="530" height="125" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="799" y="1093.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">再開・照合・切戻しを判断</text>
+<text x="799" y="1140.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">再実行前に状態と再開点を確認</text>
+<text x="700" y="1240.0" font-size="25" font-weight="600" fill="#b85b16" text-anchor="middle">保留しても、起動済みのAurora側処理が止まるとは限らない</text>
+<rect x="52" y="1310" width="1296" height="64" rx="10" fill="#f4f0fa" stroke="none" stroke-width="2"/>
+<text x="700" y="1363.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">手動で開始することと、デタッチ方式のManual failoverを選ぶことは別</text>
+<text x="52" y="1405.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">本レポートの設計例。[5][6][9][22]。実行後のフェンシング失敗と、開始前の停止未確認を区別する。</text></g></svg>
