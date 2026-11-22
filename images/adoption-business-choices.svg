@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1020" viewBox="0 0 1400 1020"><defs>
+<marker id="normal" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#245f9c"/></marker>
+<marker id="risk" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#b85b16"/></marker>
+<marker id="human" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#7252a3"/></marker>
+<marker id="plain" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#526479"/></marker>
+</defs><rect width="1400" height="1020" fill="white"/><g font-family="Hiragino Sans, Noto Sans CJK JP, sans-serif">
+<text x="52" y="58.0" font-size="32" font-weight="600" fill="#243447" text-anchor="start">自動化の採用理由は、一つではない</text>
+<text x="52" y="103.0" font-size="21" font-weight="400" fill="#526479" text-anchor="start">青＝公開された事実　紫＝本レポートの考察　橙＝公開資料では未確認</text>
+<rect x="52" y="150" width="616" height="700" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="732" y="150" width="616" height="700" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="80" y="198.0" font-size="28" font-weight="600" fill="#243447" text-anchor="start">金融顧客のポータル</text>
+<text x="760" y="198.0" font-size="28" font-weight="600" fill="#243447" text-anchor="start">住信SBIネット銀行／NRI</text>
+<rect x="80" y="235" width="560" height="135" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="104" y="278.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">公表：復旧の速さを重視</text>
+<text x="104" y="325.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">厳しいRTO／非ゼロRPO</text>
+<rect x="760" y="235" width="560" height="135" rx="10" fill="#eff5fc" stroke="#cbd5e1" stroke-width="2"/>
+<text x="784" y="278.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">公表：不整合を避ける方針</text>
+<text x="784" y="325.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">閉塞・アクセス制御／RTOを延長</text>
+<path d="M360 370V425" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<path d="M1040 370V425" fill="none" stroke="#7252a3" stroke-width="3" marker-end="url(#human)"/>
+<rect x="80" y="425" width="560" height="150" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="104" y="468.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">考察：停止の損失を抑える選択</text>
+<text x="104" y="515.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">同期待ちの不確実な長期化より</text>
+<text x="104" y="549.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">早い再開を優先したと読める</text>
+<rect x="760" y="425" width="560" height="150" rx="10" fill="#f4f0fa" stroke="#cbd5e1" stroke-width="2"/>
+<text x="784" y="468.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">考察：制御と運用へ投資する選択</text>
+<text x="784" y="515.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">制御可能な障害に備え</text>
+<text x="784" y="549.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">専門家・試験・手動経路を整備</text>
+<rect x="80" y="640" width="560" height="165" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="104" y="683.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">未確認</text>
+<text x="104" y="730.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">更新頻度／業務原本／照合方法</text>
+<text x="104" y="764.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">split brainを許す条件</text>
+<rect x="760" y="640" width="560" height="165" rx="10" fill="#fff4e8" stroke="#cbd5e1" stroke-width="2"/>
+<text x="784" y="683.0" font-size="25" font-weight="600" fill="#243447" text-anchor="start">未確認</text>
+<text x="784" y="730.0" font-size="23" font-weight="400" fill="#243447" text-anchor="start">制御失敗を含む保証範囲</text>
+<text x="784" y="764.04" font-size="23" font-weight="400" fill="#243447" text-anchor="start">残余リスクの社内承認内容</text>
+<rect x="52" y="885" width="1296" height="74" rx="10" fill="#f4f0fa" stroke="none" stroke-width="2"/>
+<text x="700" y="938.0" font-size="26" font-weight="600" fill="#243447" text-anchor="middle">「自動化している」だけでは、「損失・分岐を許容した」とは断定できない</text>
+<text x="52" y="995.0" font-size="19" font-weight="400" fill="#526479" text-anchor="start">出典：[31]〜[35]。企業名は資料公表当時。二つの判断類型は分析であり、社内意思決定を確認したものではない。</text></g></svg>
